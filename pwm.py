@@ -2,9 +2,9 @@ import time
 
 import pyfirmata
 
-board = pyfirmata.Arduino('/dev/ttyACM0')  # arduino setup
+board = Arduino('/dev/ttyACM0')  # arduino setup
 
-iter8 = pyfirmata.util.Iterator(board)
+iter8= util.Iterator(board)
 iter8.start()
 
 LED = board.get_pin('d:3:p')
